@@ -7,6 +7,7 @@ import ReactPlayer from 'react-player/youtube';
 import ModulesNav from './modules-navigation';
 import MarkDown from './md-content';
 
+
 /**
  * Module Detail renders content of a given module:
  * Video player, modules navigation and markdown content
@@ -20,7 +21,7 @@ const ModuleDetail = ({ track, module }) => {
       <TopSection>
         <TopContainer totalWidth={width}>
           <PlayerContainer>
-            <ReactPlayer url={videoUrl} width="100%" height="100%" />
+            <ReactPlayer url={videoUrl} width='100%' height='100%' />
           </PlayerContainer>
           <ModulesNav track={track} module={module}></ModulesNav>
         </TopContainer>
